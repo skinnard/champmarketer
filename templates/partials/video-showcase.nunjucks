@@ -1,0 +1,59 @@
+<section class="p-0 bg-primary row no-gutters o-hidden">
+    <div class="col-lg-5 col-xl-6 d-flex align-items-center justify-content-center">
+        <a data-fancybox="data-fancybox" href="https://vimeo.com/166034462#t=32s" class="btn btn-lg btn-light rounded-circle position-absolute" data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/icons/interface/icon-media-play.svg" alt="Media Play Icon" class="icon icon-lg bg-dark pl-1" data-inject-svg="data-inject-svg">
+        </a>
+        <img src="assets/img/heros/hero-2.jpg" alt="Image" class="w-100 h-100">
+        <div class="divider divider-side bg-primary d-none d-lg-block"></div>
+    </div>
+    <div class="col-lg-7 col-xl-6">
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-md-10 col-xl-9">
+                        <div class="text-white text-center text-lg-left">
+                            <h3 class="h1">Showcase your product with an engaing video</h3>
+                            <p class="lead">
+                                Non pulvinar neque laoreet suspendisse interdum Catelyn libero id. Olenna imp leo in vitae turpis massa. Sapien habitant Tyrion.
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start mt-4 mt-md-5">
+                            <div class="mx-2 ml-sm-0 ml-sm-0 mb-2 bg-white rounded p-2 pr-3 p-md-3 pr-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-success-alt">
+                                        <img src="assets/img/icons/interface/icon-check.svg" alt="Binoculars icon" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
+                                    </div>
+                                    <h6 class="mb-0 ml-3">Fully Responsive</h6>
+                                </div>
+                            </div>
+                            <div class="mx-2 ml-sm-0 ml-sm-0 mb-2 bg-white rounded p-2 pr-3 p-md-3 pr-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-success-alt">
+                                        <img src="assets/img/icons/interface/icon-check.svg" alt="Layouts icon" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
+                                    </div>
+                                    <h6 class="mb-0 ml-3">Multiple Layouts</h6>
+                                </div>
+                            </div>
+                            <div class="mx-2 ml-sm-0 ml-sm-0 mb-2 bg-white rounded p-2 pr-3 p-md-3 pr-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-success-alt">
+                                        <img src="assets/img/icons/interface/icon-check.svg" alt="Box icon" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
+                                    </div>
+                                    <h6 class="mb-0 ml-3">Modular Components</h6>
+                                </div>
+                            </div>
+                            <div class="mx-2 ml-sm-0 ml-sm-0 mb-2 bg-white rounded p-2 pr-3 p-md-3 pr-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-success-alt">
+                                        <img src="assets/img/icons/interface/icon-check.svg" alt="Lightning icon" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
+                                    </div>
+                                    <h6 class="mb-0 ml-3">Suits Your Style</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
