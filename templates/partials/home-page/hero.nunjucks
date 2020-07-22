@@ -1,0 +1,55 @@
+
+<section class="bg-light o-hidden pt-5 pb-0">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 d-flex flex-column text-center text-lg-left mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="pr-xl-5">
+                    <h1 class="display-4">Instagram Followers &amp; Likes
+                        <mark data-aos="highlight-text" data-aos-delay="250">in&nbsp;Minutes</mark>
+                    </h1>
+                    <p class="lead">Our system detects new uploads and sends you real likes from real users automatically.
+                    </p>
+
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <div class="mr-2 mb-2">
+                            <a href="#" class="btn btn-primary">Buy Likes</a>
+                        </div>
+                        <div class="mr-2 mb-2">
+                            <a href="#" class="btn btn-primary">Buy Followers</a>
+                        </div>
+                        <div class="mr-2 mb-2">
+                            <a href="#" class="btn btn-primary">Buy Views</a>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center justify-content-center justify-content-lg-start">
+                        <div class="d-flex" data-aos="fade-right">
+                            <div class="mt-4 mt-lg-5">
+
+                                <div class="m-2">
+                                    <div class="media rounded align-items-center pl-3 pr-3 pr-md-4 py-2 shadow-sm bg-white">
+                                        <img src="assets/img/avatars/female-4.jpg" alt="Ashley Mance avatar image" class="avatar avatar-sm flex-shrink-0 mr-3">
+                                        <div class="text-dark mb-0">&ldquo;ChampMarketer is a dream come true.&rdquo;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center" data-jarallax-element="-50">
+                    <div class="col-12" data-aos="zoom-in" data-aos-delay="250">
+                        <img class="img-fluid" src="assets/img/heros/home-hero-graphic.svg" alt="Screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-50 h-50 bottom right position-absolute" data-aos="zoom-in" data-aos-delay="500">
+        <div class="blob h-100 w-100 bottom right opacity-90" style="background: #FFDC80"></div>
+    </div>
+    <div class="divider divider-bottom bg-white mt-5"></div>
+</section>

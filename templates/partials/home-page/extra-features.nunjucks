@@ -1,0 +1,49 @@
+<section class="o-hidden">
+    <div class="container">
+      <div class="row align-items-center justify-content-around flex-lg-row-reverse">
+        <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-lg-0 pl-lg-5 pl-xl-0">
+          <div data-aos="fade-in" data-aos-offset="250">
+            <h2 class="h1 text-center text-lg-left">Here's how we do things differently</h2>
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+              <div class="my-4" data-aos="fade-left" data-aos-delay="100">
+                <div class="d-flex">
+                  <div class="mr-3 mr-md-4">
+                    <img src="assets/img/icons/theme/general/bookmark.svg" alt="Bookmark icon" class="icon bg-primary" data-inject-svg="data-inject-svg">
+                  </div>
+                  <div>
+                    <h5>Well Documented</h5>
+                    <div>
+                      Duis convallis convallis tellus imp interdum. Non diam phasellus vestibulum lorem sed risus ultricies Tyrion. Enim blandit volutpat.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="d-flex">
+                  <div class="mr-3 mr-md-4">
+                    <img src="assets/img/icons/theme/design/select.svg" alt="Selection interface icon" class="icon bg-primary" data-inject-svg="data-inject-svg">
+                  </div>
+                  <div>
+                    <h5>Highly Customizable</h5>
+                    <div>
+                      Eunuch sed blandit libero volutpat sed cras. Cersei quis imperdiet tincidunt unuch pulvinar sapien. Habitasse platea Davos vestibulum.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-xl-6">
+          <div class="row justify-content-center" data-jarallax-element="-50">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-8 col-xl-6" data-aos="zoom-in" data-aos-delay="250">
+              <img class="img-fluid position-relative" src="assets/img/mobile-app/mobile-app-3.png" alt="Screenshot">
+              <div class="h-75 w-75 position-absolute bottom right d-none d-lg-block" data-jarallax-element="-50">
+                <div class="blob blob-4 w-100 h-100 bg-primary opacity-90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
