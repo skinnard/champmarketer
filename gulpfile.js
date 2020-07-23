@@ -24,6 +24,7 @@ const autoprefixer = require("gulp-autoprefixer"),
   themeYaml = "./theme.yml",
   year = new Date().getFullYear(),
   yaml = require("yamljs"),
+  data = require("gulp-data"),
   nunjucksRender = require("gulp-nunjucks-render");
 
 let copyDeps = yaml.load(copyDepsYaml);
@@ -166,6 +167,12 @@ gulp.task("nunjucks", function () {
     gulp
       .src("./templates/pages/**/*.+(html|nunjucks)")
       // Renders template with nunjucks
+      // Adding data to Nunjucks
+      .pipe(
+        data(function () {
+          return require("./data.json");
+        })
+      )
       .pipe(
         nunjucksRender({
           path: [
