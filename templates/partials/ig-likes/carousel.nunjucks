@@ -22,20 +22,20 @@
         </div>
         <div class="features p-3">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item py-1 px-2">
+            <li class="list-group-item border-0 py-1 px-2">
               {% include "checkmark.njk" %}
               Real Users</li>
-            <li class="list-group-item py-1 px-2">
+            <li class="list-group-item border-0 py-1 px-2">
               {% include "checkmark.njk" %}
             Safe &amp; Secure</li>
-            <li class="list-group-item py-1 px-2">
+            <li class="list-group-item border-0 py-1 px-2">
               {% include "checkmark.njk" %}
             24/7 Support</li>
-            <li class="list-group-item py-1 px-2">
+            <li class="list-group-item border-0 py-1 px-2">
               {% include "checkmark.njk" %}
               <strong>High Retention Rate</strong>
             </li>
-            <li class="list-group-item py-1 px-2">
+            <li class="list-group-item border-0 py-1 px-2">
               {% include "checkmark.njk" %}
             Engaging Users</li>
           </ul>
