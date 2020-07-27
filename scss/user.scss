@@ -4,35 +4,4 @@
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
-#ig-likes-carousel {
-  margin: 100px 20px;
-  height: 600px;
-  //   border-right: 1px solid #cccccc;
-  //   box-shadow: inset -53px 0 30px -30px rgba(0, 0, 0, 0.4);
-
-  .col {
-    height: auto;
-    width: 100%;
-    max-width: 300px;
-
-    .features {
-        ul {
-            list-style: none;
-            
-            li {
-                display: flex;
-                align-items: center;
-
-                .rounded-circle {
-                    margin-right: 10px;
-                    background: none;
-
-                    svg {
-                        margin: 3px !important;
-                    }
-                }
-            }
-        }
-    }
-  }
-}
+@import "./user/carousel";

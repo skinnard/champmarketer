@@ -1,0 +1,30 @@
+#ig-likes-carousel {
+    margin: 0;
+    height: 480px;
+  
+    .col {
+      height: auto;
+      width: 100%;
+      max-width: 300px;
+  
+      .features {
+          ul {
+              list-style: none;
+              
+              li {
+                  display: flex;
+                  align-items: center;
+  
+                  .rounded-circle {
+                      margin-right: 10px;
+                      background: none;
+  
+                      svg {
+                          margin: 3px !important;
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
