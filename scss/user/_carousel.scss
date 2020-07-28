@@ -1,30 +1,81 @@
-#ig-likes-carousel {
+.carousel-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  #ig-likes-carousel {
     margin: 0;
     height: 480px;
-  
+
+    &::before,
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      pointer-events: none;
+      z-index: 6;
+
+      @media screen and(max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &::before {
+      background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff);
+      right: 0px;
+    }
+
+    &::after {
+      left: 0px;
+      background: linear-gradient(90deg, #fff 0, hsla(0, 0%, 100%, 0));
+    }
+
+    .flickity-button {
+      z-index: 999;
+
+      &.flickity-prev-next-button.next {
+        right: -30px;
+        
+        @media screen and(max-width: 1300px) {
+            right: 30px;
+        }
+
+      }
+
+      &.flickity-prev-next-button.previous {
+        left: -30px;
+
+        @media screen and(max-width: 1300px) {
+            left: 30px;
+        }
+      }
+    }
+
     .col {
       height: auto;
       width: 100%;
       max-width: 300px;
-  
+
       .features {
-          ul {
-              list-style: none;
-              
-              li {
-                  display: flex;
-                  align-items: center;
-  
-                  .rounded-circle {
-                      margin-right: 10px;
-                      background: none;
-  
-                      svg {
-                          margin: 3px !important;
-                      }
-                  }
+        ul {
+          list-style: none;
+
+          li {
+            display: flex;
+            align-items: center;
+
+            .rounded-circle {
+              margin-right: 10px;
+              background: none;
+
+              svg {
+                margin: 3px !important;
               }
+            }
           }
+        }
       }
     }
   }
+}
