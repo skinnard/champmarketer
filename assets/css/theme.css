@@ -13526,22 +13526,57 @@ pre[class*="language-"] {
 .tweet {
   word-break: break-word; }
 
-#ig-likes-carousel {
-  margin: 0;
-  height: 480px; }
-  #ig-likes-carousel .col {
-    height: auto;
-    width: 100%;
-    max-width: 300px; }
-    #ig-likes-carousel .col .features ul {
-      list-style: none; }
-      #ig-likes-carousel .col .features ul li {
-        display: flex;
-        align-items: center; }
-        #ig-likes-carousel .col .features ul li .rounded-circle {
-          margin-right: 10px;
-          background: none; }
-          #ig-likes-carousel .col .features ul li .rounded-circle svg {
-            margin: 3px !important; }
+.carousel-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .carousel-wrapper #ig-likes-carousel {
+    margin: 0;
+    height: 480px; }
+    .carousel-wrapper #ig-likes-carousel::before, .carousel-wrapper #ig-likes-carousel::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      pointer-events: none;
+      z-index: 6; }
+      @media screen and (max-width: 1200px) {
+        .carousel-wrapper #ig-likes-carousel::before, .carousel-wrapper #ig-likes-carousel::after {
+          display: none; } }
+    .carousel-wrapper #ig-likes-carousel::before {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff);
+      right: 0px; }
+    .carousel-wrapper #ig-likes-carousel::after {
+      left: 0px;
+      background: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0)); }
+    .carousel-wrapper #ig-likes-carousel .flickity-button {
+      z-index: 999; }
+      .carousel-wrapper #ig-likes-carousel .flickity-button.flickity-prev-next-button.next {
+        right: -30px; }
+        @media screen and (max-width: 1300px) {
+          .carousel-wrapper #ig-likes-carousel .flickity-button.flickity-prev-next-button.next {
+            right: 30px; } }
+      .carousel-wrapper #ig-likes-carousel .flickity-button.flickity-prev-next-button.previous {
+        left: -30px; }
+        @media screen and (max-width: 1300px) {
+          .carousel-wrapper #ig-likes-carousel .flickity-button.flickity-prev-next-button.previous {
+            left: 30px; } }
+    .carousel-wrapper #ig-likes-carousel .col {
+      height: auto;
+      width: 100%;
+      max-width: 300px; }
+      .carousel-wrapper #ig-likes-carousel .col .features ul {
+        list-style: none; }
+        .carousel-wrapper #ig-likes-carousel .col .features ul li {
+          display: flex;
+          align-items: center; }
+          .carousel-wrapper #ig-likes-carousel .col .features ul li .rounded-circle {
+            margin-right: 10px;
+            background: none; }
+            .carousel-wrapper #ig-likes-carousel .col .features ul li .rounded-circle svg {
+              margin: 3px !important; }
+
+.sticky-top {
+  top: 70px; }
 
 /*# sourceMappingURL=theme.css.map */
