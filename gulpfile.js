@@ -25,6 +25,8 @@ const autoprefixer = require("gulp-autoprefixer"),
   year = new Date().getFullYear(),
   yaml = require("yamljs"),
   data = require("gulp-data"),
+  {src, task}= require('gulp');
+  ghPages = require("gulp-gh-pages"),
   nunjucksRender = require("gulp-nunjucks-render");
 
 let copyDeps = yaml.load(copyDepsYaml);
@@ -473,6 +475,8 @@ gulp.task("watch", function (done) {
   done();
   // End watch task
 });
+
+task("deploy", () => src("./dist/**/*").pipe(ghPages()));
 
 gulp.task(
   "default",
