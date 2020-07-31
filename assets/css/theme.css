@@ -13576,7 +13576,14 @@ pre[class*="language-"] {
             .carousel-wrapper #ig-likes-carousel .col .features ul li .rounded-circle svg {
               margin: 3px !important; }
 
-.sticky-top {
-  top: 70px; }
+nav > .pagination .page-item .page-link {
+  color: #E1306C; }
+  nav > .pagination .page-item .page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 48, 108, 0.25); }
+
+nav > .pagination .page-item.active .page-link {
+  color: #ffffff;
+  background-color: #E1306C;
+  border: 1px solid #E1306C; }
 
 /*# sourceMappingURL=theme.css.map */
