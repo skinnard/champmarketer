@@ -1,0 +1,19 @@
+nav > .pagination {
+  .page-item {
+    .page-link {
+      color: $primary;
+
+      &:focus {
+          box-shadow: 0 0 0 0.2rem rgba(225, 48, 108, 0.25);
+      }
+    }
+
+    &.active {
+      .page-link {
+        color: #ffffff;
+        background-color: $primary;
+        border: 1px solid $primary;
+      }
+    }
+  }
+}

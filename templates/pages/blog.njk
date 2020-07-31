@@ -1,0 +1,10 @@
+{{ pageName }}
+{% set pageName = "blog" %}
+{{ pageName }}
+
+{% extends "layout.njk" %}
+
+{% block content %}
+    {% include "blog-content.njk" %}
+    {% include "newsletter.njk" %}
+{% endblock %}
