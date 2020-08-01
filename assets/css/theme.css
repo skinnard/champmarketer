@@ -7936,7 +7936,7 @@ footer {
 
 @media (min-width: 1200px) {
   .navbar-nav > .nav-item {
-    font-size: 1.25rem; } }
+    font-size: 1rem; } }
 
 .navbar-dark .navbar-brand-dynamic-color svg [stroke]:not([stroke="none"]),
 .navbar-dark .navbar-toggler svg [stroke]:not([stroke="none"]) {
