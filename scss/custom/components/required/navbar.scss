@@ -77,7 +77,7 @@
 @include media-breakpoint-up(xl) {
     .navbar-nav {
         >.nav-item {
-            font-size: $font-size-lg;
+            font-size: $font-size-base;
         }
     }
 }

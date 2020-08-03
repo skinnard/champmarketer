@@ -1,0 +1,9 @@
+#account {
+    [class*='sticky-lg'][class*='-top'][class*='col'] {
+    top: 100px !important;
+
+    @media screen and (max-width: 991px){
+        top: 0 !important;
+    }
+  }
+}

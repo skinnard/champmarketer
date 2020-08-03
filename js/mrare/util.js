@@ -118,6 +118,7 @@ const mrUtil = (($) => {
     },
   };
 
+
   return Util;
 })(jQuery);
 

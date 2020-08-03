@@ -301,8 +301,9 @@ gulp.task("mrarejs", async (done) => {
 
   let fileDest = "theme.js";
   const banner = `/*!
-  * ${theme.name}
-  * Copyright 2018-${year} Medium Rare (${theme.purchase_link})
+  * 
+  * Copyright 2018-${year} ChampMarketer
+  * 
   */`;
   const external = [...theme.scripts.external];
   const plugins = [

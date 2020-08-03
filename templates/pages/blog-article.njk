@@ -1,0 +1,9 @@
+{{ pageName }}
+{% set pageName = "article" %}
+{{ pageName }}
+
+{% extends "layout.njk" %}
+
+{% block content %}
+    {% include "article.njk" %}
+{% endblock %}
