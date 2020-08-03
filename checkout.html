@@ -59,13 +59,23 @@
             <a href="/champmarketer/buy-instagram-views.html" class="nav-link">Buy Views</a>
           </li>
           <li class="nav-item">
-            <a href="/champmarketer/blog.html" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="/champmarketer/faq.html" class="nav-link">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a href="/champmarketer/contact-us.html" class="nav-link">Contact Us</a>
+            <div class="dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Extra</a>
+              <div class="row dropdown-menu">
+                <div class="col-auto" data-dropdown-content>
+                  <div class="dropdown-grid-menu">
+                    <a href="/champmarketer/faq.html" class="dropdown-item fade-page">FAQ</a>
+                    <a href="/champmarketer/contact-us.html" class="dropdown-item fade-page">Contact Us</a>
+                    <a href="/champmarketer/blog.html" class="dropdown-item fade-page">Blog</a>
+                    <a href="/champmarketer/blog-article.html" class="dropdown-item fade-page">Blog Article</a>
+                    <a href="/champmarketer/checkout.html" class="dropdown-item fade-page">Checkout</a>
+                    <a href="/champmarketer/account-settings.html" class="dropdown-item fade-page">Account Page</a>
+                    <a href="/champmarketer/account-forgot-password.html" class="dropdown-item fade-page">Forgot Password</a>
+                    <a href="/champmarketer/404.html" class="dropdown-item fade-page">404</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-toggle="modal" data-target="#sign-in-modal">Login</a>
@@ -80,18 +90,18 @@
     <section class="bg-light">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-8">
                 <div class="card card-body shadow-lg">
                     <h1 class="text-center h2">Checkout</h1>
 
-                    <form id="checkout-step-one-form" class="choose-account-single" autocomplete="off">
+                    <form id="checkout-form" class="choose-account-single" autocomplete="off">
                         <div id="checkout-package-wrapper" class="field">
                             <div id="checkout-package-select" class="ui selection dropdown package top" tabindex="0">
                                 <input id="checkout-package-input" type="hidden" name="package" value="100">
-                                <i class="dropdown icon" style="opacity: 1;"></i>
-                                <i class="icon-heart" style="opacity: 1;"></i>
+                                <img src="assets/img/icons/interface/icon-caret-down.svg" alt="Arrow Down" class="icon icon-sm dropdown-icon">
+                                <img class="icon bg-primary heart-icon" src="assets/img/icons/theme/general/heart.svg" alt="Icon" data-inject-svg />
                                 <div class="text" style="opacity: 1;">100 likes <span class="right">$2.99</span></div>
-                                <div class="menu transition hidden" tabindex="-1" style="opacity: 1;">
+                                <div id="checkout-menu" class="menu transition hidden" tabindex="-1" style="opacity: 1;">
                                     <div class="item active selected" data-selected="true" data-value="100">100 likes <span class="right">$2.99</span></div>
                                     <div class="item" data-selected="false" data-value="250">250 likes <span class="right">$4.49</span></div>
                                     <div class="item" data-selected="false" data-value="500">500 likes <span class="right">$6.79</span></div>
@@ -114,16 +124,16 @@
                         </div>
 
                         <div id="checkout-username-wrapper" class="field">
-                            <i class="username"></i>
-                            <input type="text" name="username" autocapitalize="none" class="bottom" placeholder="Instagram Username" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                            <img class="icon bg-primary" src="assets/img/icons/theme/general/user.svg" alt="Icon" data-inject-svg />
+                            <input type="text" name="username" autocapitalize="none" class="bottom" placeholder="Instagram Username" autocomplete="off">
                         </div>
 
-                        <p id="checkout-consent">By clicking on <strong>Continue</strong>, you agree to our <a target="_blank" href="https://stormlikes.com/terms">terms of service</a> and confirm that you've read our <a target="_blank" href="https://stormlikes.com/privacy-policy">privacy policy</a>.</p>
+                        <p id="checkout-consent" class="my-4">By clicking on <strong>Continue</strong>, you agree to our <a target="_blank" href="https://stormlikes.com/terms">terms of service</a> and confirm that you've read our <a target="_blank" href="https://stormlikes.com/privacy-policy">privacy policy</a>.</p>
 
-                        <button id="checkout-step-one-continue" class="btn-style animated">
-                            <span class="text">
-                    Continue                </span>
-                            <span class="spinner white"></span></button>
+                        <button id="checkout-button" class="btn btn-primary">
+                            <span class="text">Continue</span>
+                            <span class="spinner white"></span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -388,3 +398,18 @@
   </body>
 
 </html>
+
+<script>
+    $(document).ready(function () {
+        $menu = $('#checkout-menu');
+        $('#checkout-package-select').on('click', function () {
+            if ($menu.hasClass('hidden')) {
+                $menu.removeClass('hidden');
+                $menu.addClass('show');
+            } else {
+                $menu.removeClass('show');
+                $menu.addClass('hidden');
+            }
+        });
+    });
+</script>

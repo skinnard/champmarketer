@@ -59,13 +59,23 @@
             <a href="/champmarketer/buy-instagram-views.html" class="nav-link">Buy Views</a>
           </li>
           <li class="nav-item">
-            <a href="/champmarketer/blog.html" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="/champmarketer/faq.html" class="nav-link">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a href="/champmarketer/contact-us.html" class="nav-link">Contact Us</a>
+            <div class="dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Extra</a>
+              <div class="row dropdown-menu">
+                <div class="col-auto" data-dropdown-content>
+                  <div class="dropdown-grid-menu">
+                    <a href="/champmarketer/faq.html" class="dropdown-item fade-page">FAQ</a>
+                    <a href="/champmarketer/contact-us.html" class="dropdown-item fade-page">Contact Us</a>
+                    <a href="/champmarketer/blog.html" class="dropdown-item fade-page">Blog</a>
+                    <a href="/champmarketer/blog-article.html" class="dropdown-item fade-page">Blog Article</a>
+                    <a href="/champmarketer/checkout.html" class="dropdown-item fade-page">Checkout</a>
+                    <a href="/champmarketer/account-settings.html" class="dropdown-item fade-page">Account Page</a>
+                    <a href="/champmarketer/account-forgot-password.html" class="dropdown-item fade-page">Forgot Password</a>
+                    <a href="/champmarketer/404.html" class="dropdown-item fade-page">404</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-toggle="modal" data-target="#sign-in-modal">Login</a>
@@ -555,3 +565,18 @@
   </body>
 
 </html>
+
+<script>
+    $(document).ready(function () {
+        $menu = $('#checkout-menu');
+        $('#checkout-package-select').on('click', function () {
+            if ($menu.hasClass('hidden')) {
+                $menu.removeClass('hidden');
+                $menu.addClass('show');
+            } else {
+                $menu.removeClass('show');
+                $menu.addClass('hidden');
+            }
+        });
+    });
+</script>
