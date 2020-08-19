@@ -13790,10 +13790,25 @@ nav > .pagination .page-item.active .page-link {
   background-color: #E1306C;
   box-shadow: none; }
 
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #E1306C; }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #E1306C;
+  text-decoration: none;
+  background-color: #ffedf3; }
+
+.form-control:focus {
+  border-color: #E1306C; }
+
 #account [class*='sticky-lg'][class*='-top'][class*='col'] {
   top: 100px !important; }
   @media screen and (max-width: 991px) {
     #account [class*='sticky-lg'][class*='-top'][class*='col'] {
       top: 0 !important; } }
+
+@media screen and (max-width: 475px) {
+  #home-hero .button-wrapper div {
+    width: 100%; } }
 
 /*# sourceMappingURL=theme.css.map */
