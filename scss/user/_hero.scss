@@ -1,0 +1,9 @@
+#home-hero {
+    .button-wrapper {
+        div {
+            @media screen and (max-width: 475px) {
+                width: 100%;
+            }
+        }
+    }
+}

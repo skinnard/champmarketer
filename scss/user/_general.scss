@@ -9,3 +9,18 @@
     background-color: $primary;
     box-shadow: none;
 }
+
+.dropdown-item:hover, 
+.dropdown-item:focus {
+  color: $primary;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #E1306C;
+  text-decoration: none;
+  background-color: rgb(255, 237, 243);
+}
+
+.form-control:focus {
+  border-color: $primary;
+}
