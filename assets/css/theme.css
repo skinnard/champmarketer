@@ -13818,13 +13818,7 @@ nav > .pagination .page-item.active .page-link {
 #cta-section .item #followers-new,
 #cta-section .item #likes-new,
 #cta-section .item #views-new {
-  width: 300px; }
-  @media (max-width: 992px) {
-    #cta-section .item #followers-new,
-    #cta-section .item #likes-new,
-    #cta-section .item #views-new {
-      width: 250px;
-      height: 2500px; } }
+  width: 100%; }
 
 #footer .menu .title,
 #footer .menu .nav {
