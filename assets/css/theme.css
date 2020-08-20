@@ -13815,21 +13815,16 @@ nav > .pagination .page-item.active .page-link {
   transform: scale(1);
   transition: scale 0.3 ease; }
 
-#cta-section .item #followers-icon,
-#cta-section .item #likes-icon,
-#cta-section .item #views-icon {
-  width: 150px;
-  height: 150px; }
+#cta-section .item #followers-new,
+#cta-section .item #likes-new,
+#cta-section .item #views-new {
+  width: 300px; }
   @media (max-width: 992px) {
-    #cta-section .item #followers-icon,
-    #cta-section .item #likes-icon,
-    #cta-section .item #views-icon {
-      width: 100px;
-      height: 100px; } }
-
-#cta-section .item:hover .img-wrapper {
-  transform: scale(1.2);
-  transition: scale 0.3 ease; }
+    #cta-section .item #followers-new,
+    #cta-section .item #likes-new,
+    #cta-section .item #views-new {
+      width: 250px;
+      height: 2500px; } }
 
 #footer .menu .title,
 #footer .menu .nav {
@@ -13838,5 +13833,10 @@ nav > .pagination .page-item.active .page-link {
     #footer .menu .title,
     #footer .menu .nav {
       text-align: center; } }
+
+@media (max-width: 768px) {
+  #footer .menu a {
+    display: block;
+    text-align: center; } }
 
 /*# sourceMappingURL=theme.css.map */
