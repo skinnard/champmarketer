@@ -13811,4 +13811,32 @@ nav > .pagination .page-item.active .page-link {
   #home-hero .button-wrapper div {
     width: 100%; } }
 
+#cta-section .item .img-wrapper {
+  transform: scale(1);
+  transition: scale 0.3 ease; }
+
+#cta-section .item #followers-icon,
+#cta-section .item #likes-icon,
+#cta-section .item #views-icon {
+  width: 150px;
+  height: 150px; }
+  @media (max-width: 992px) {
+    #cta-section .item #followers-icon,
+    #cta-section .item #likes-icon,
+    #cta-section .item #views-icon {
+      width: 100px;
+      height: 100px; } }
+
+#cta-section .item:hover .img-wrapper {
+  transform: scale(1.2);
+  transition: scale 0.3 ease; }
+
+#footer .menu .title,
+#footer .menu .nav {
+  text-align: left; }
+  @media (max-width: 768px) {
+    #footer .menu .title,
+    #footer .menu .nav {
+      text-align: center; } }
+
 /*# sourceMappingURL=theme.css.map */
