@@ -8,12 +8,11 @@
     #followers-new,
     #likes-new,
     #views-new {
-      width: 300px;
+      width: 100%;
 
-      @media (max-width: 992px) {
-        width: 250px;
-        height: 2500px;
-      }
+      // @media (max-width: 992px) {
+      //   width: 250px;
+      // }
     }
 
     // &:hover {
