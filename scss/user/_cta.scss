@@ -5,23 +5,22 @@
         transition: scale 0.3 ease;
       }
 
-    #followers-icon,
-    #likes-icon,
-    #views-icon {
-      width: 150px;
-      height: 150px;
+    #followers-new,
+    #likes-new,
+    #views-new {
+      width: 300px;
 
       @media (max-width: 992px) {
-        width: 100px;
-        height: 100px;
+        width: 250px;
+        height: 2500px;
       }
     }
 
-    &:hover {
-      .img-wrapper {
-        transform: scale(1.2);
-        transition: scale 0.3 ease;
-      }
-    }
+    // &:hover {
+    //   .img-wrapper {
+    //     transform: scale(1.2);
+    //     transition: scale 0.3 ease;
+    //   }
+    // }
   }
 }
