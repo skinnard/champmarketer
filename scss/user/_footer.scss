@@ -1,0 +1,12 @@
+#footer {
+    .menu  {
+        .title,
+        .nav {
+            text-align: left;
+
+            @media (max-width:  768px) {
+                text-align: center;
+            }
+        }
+    }
+}
