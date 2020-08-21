@@ -24,3 +24,32 @@
 .form-control:focus {
   border-color: $primary;
 }
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(225, 48, 108, 0.12);
+}
+
+.form-group {
+  label {
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #aaa;
+    padding: 0 0 2px 1px;
+    margin: 0;
+    line-height: 130%;
+  }
+
+  .custom-select:focus {
+    border-color: $primary;
+    outline: 0;
+  }
+
+  .icon {
+    top: 45px !important;
+  }
+}
