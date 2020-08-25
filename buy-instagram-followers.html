@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <title>ChampMarketer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get real followers, from real people. No bots, no fake accounts.">
     <!-- Begin loading animation -->
-    <link href="assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- End loading animation -->
-    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
   </head>
-<body>
+  <body>
 <div class="loader">
     <div class="loading-animation"></div>
 </div>
@@ -98,11 +101,11 @@
     </div>
   </div>
 
-  <div class="carousel-wrapper" style="padding-left: 20px; padding-right: 20px;">
-    <div id="ig-likes-carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": true, "freeScrollFriction": 0.03, "pageDots": false, "adaptiveHeight": true, "setGallerySize": false}'>
+  <div id="carousel-wrapper">
+    <div id="ig-likes-carousel" class="cm-carousel" style="padding-left: 20px; padding-right: 20px;">
 
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">50 Followers</h5>
@@ -113,32 +116,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -148,7 +151,7 @@
 
         </div>
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">100 Followers</h5>
@@ -159,32 +162,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -194,7 +197,7 @@
 
         </div>
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">500 Followers</h5>
@@ -205,32 +208,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -240,7 +243,7 @@
 
         </div>
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">1,000 Followers</h5>
@@ -251,32 +254,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -286,7 +289,7 @@
 
         </div>
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">2,500 Followers</h5>
@@ -297,32 +300,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -332,7 +335,7 @@
 
         </div>
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">5,000 Followers</h5>
@@ -343,32 +346,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -378,7 +381,7 @@
 
         </div>
       
-        <div class="col card shadow p-0 m-3">
+        <div class="col card shadow p-0 my-3" aria-hidden="true" tabindex="-1">
           <div class="likes text-center p-3 d-flex align-items-center justify-content-center">
             <img class="icon bg-primary" src="assets/img/icons/theme/communication/group.svg" alt="Icon" data-inject-svg style="width: 25px; margin-right: 5px;"/>
             <h5 class="likes m-0">10,000 Followers</h5>
@@ -389,32 +392,32 @@
           </div>
           <div class="features p-3">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-              Real Users</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Real Users</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Safe &amp; Secure</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">Safe &amp; Secure</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            24/7 Support</li>
-              <li class="list-group-item border-0 py-1 px-2">
+                <span class="pl-2">24/7 Support</span></li>
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-                <strong>High Retention Rate</strong>
+                <span class="pl-2">High Retention Rate</span>
               </li>
-              <li class="list-group-item border-0 py-1 px-2">
+              <li class="list-group-item border-0 py-1 px-2 d-flex align-items-center">
                 <div class="rounded-circle bg-success-alt">
     <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg="data-inject-svg">
 </div>
-            Engaging Users</li>
+                <span class="pl-2">Engaging Users</span></li>
             </ul>
           </div>
 
@@ -426,6 +429,12 @@
       
 
     </div>
+
+    <div class="arrows">
+      <div class="prev-arrow"><img class="icon bg-primary" src="assets/img/icons/theme/code/left-circle.svg" alt="Icon" data-inject-svg /></div>
+      <div class="next-arrow"><img class="icon bg-primary" src="assets/img/icons/theme/code/right-circle.svg" alt="Icon" data-inject-svg /></div>
+    </div>
+
   </div>
 
   <p class="text-center">Need more than 10,000 followers? <a href="#">Contact Us</a>
@@ -546,7 +555,7 @@
     </div>
     
 </section>
-   
+  
 <section>
     <div class="container">
         <div class="row justify-content-center">
@@ -853,56 +862,110 @@
     </div>
 </div>
 <!-- Required vendor scripts (Do not remove) -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+<!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
-    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
-    <script type="text/javascript" src="assets/js/aos.js"></script>
-    <!-- Clipboard (copies content from browser into OS clipboard) -->
-    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
-    <!-- Fancybox (handles image and video lightbox and galleries) -->
-    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
-    <!-- Flatpickr (calendar/date/time picker UI) -->
-    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
-    <!-- Flickity (handles touch enabled carousels and sliders) -->
-    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
-    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
-    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
-    <!-- Isotope (masonry layouts and filtering) -->
-    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- jarallax (parallax effect and video backgrounds) -->
-    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
-    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
-    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
-    <!-- jQuery Countdown (displays countdown text to a specified date) -->
-    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
-    <!-- jQuery smartWizard facilitates steppable wizard content -->
-    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
-    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
-    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
-    <!-- Prism (displays formatted code boxes) -->
-    <script type="text/javascript" src="assets/js/prism.js"></script>
-    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
-    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
-    <!-- Smooth scroll (animation to links in-page)-->
-    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
-    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
-    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
-    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
-    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
-    <!-- Typed text (animated typing effect)-->
-    <script type="text/javascript" src="assets/js/typed.min.js"></script>
-    <!-- Required theme scripts (Do not remove) -->
-    <script type="text/javascript" src="assets/js/theme.js"></script>
-    <!-- Removes page load animation when window is finished loading -->
-    <script type="text/javascript">
-      window.addEventListener("load",function(){document.querySelector('body').classList.add('loaded');});
-    </script>
+<!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+<script type="text/javascript" src="assets/js/aos.js"></script>
+<!-- Clipboard (copies content from browser into OS clipboard) -->
+<script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+<!-- Fancybox (handles image and video lightbox and galleries) -->
+<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+<!-- Flatpickr (calendar/date/time picker UI) -->
+<script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+<!-- Flickity (handles touch enabled carousels and sliders) -->
+<script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
 
-  </body>
+<!-- Slick Slider -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+
+
+<!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+<script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+<!-- Isotope (masonry layouts and filtering) -->
+<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+<!-- jarallax (parallax effect and video backgrounds) -->
+<script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+<script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+<script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+<!-- jQuery Countdown (displays countdown text to a specified date) -->
+<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+<!-- jQuery smartWizard facilitates steppable wizard content -->
+<script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+<!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+<script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+<!-- Prism (displays formatted code boxes) -->
+<script type="text/javascript" src="assets/js/prism.js"></script>
+<!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+<script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+<!-- Smooth scroll (animation to links in-page)-->
+<script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+<!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+<script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+<!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+<script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+<!-- Typed text (animated typing effect)-->
+<script type="text/javascript" src="assets/js/typed.min.js"></script>
+<!-- Required theme scripts (Do not remove) -->
+<script type="text/javascript" src="assets/js/theme.js"></script>
+<!-- Removes page load animation when window is finished loading -->
+
+<script type="text/javascript">
+  window.addEventListener("load", function () {
+    document
+      .querySelector('body')
+      .classList
+      .add('loaded');
+  });
+</script>
+
+<script>
+
+    $('.cm-carousel').slick({
+    infinite: false, 
+    slidesToShow: 4, 
+    slidesToScroll: 1, 
+    prevArrow: '.prev-arrow',
+    nextArrow: '.next-arrow',
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        arrows: true,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 540,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
+  ]
+    
+    });
+
+</script>
+
+</body>
 
 </html>
 
