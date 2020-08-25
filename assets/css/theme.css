@@ -13542,12 +13542,21 @@ pre[class*="language-"] {
   #carousel-wrapper .slick-slide {
     margin-right: 10px;
     margin-left: 10px;
-    max-width: 300px; }
+    max-width: 300px;
+    width: 300px; }
     #carousel-wrapper .slick-slide:focus {
       outline: none; }
-    @media (max-width: 540px) {
+    @media (max-width: 767px) {
       #carousel-wrapper .slick-slide {
-        max-width: 250px; } }
+        max-width: 280px; } }
+    @media (max-width: 550px) {
+      #carousel-wrapper .slick-slide {
+        margin-right: 5px;
+        margin-left: 5px; } }
+    @media (max-width: 350px) {
+      #carousel-wrapper .slick-slide {
+        width: 270px;
+        max-width: 270px; } }
   @media (max-width: 767px) {
     #carousel-wrapper .arrows {
       display: none; } }
