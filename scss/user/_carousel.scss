@@ -16,18 +16,28 @@
     margin-right: 10px;
     margin-left: 10px;
     max-width: 300px;
+    width: 300px;
 
     &:focus {
       outline: none;
     }
 
-    @media (max-width: 540px) {
-      max-width: 250px;
+    @media (max-width: 767px) {
+      max-width: 280px;
+    }
+
+    @media (max-width: 550px) {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    @media (max-width: 350px) {
+      width: 270px;
+      max-width: 270px;
     }
   }
 
   .arrows {
-
     @media (max-width: 767px) {
       display: none;
     }
@@ -41,17 +51,16 @@
 
       &.slick-disabled {
         cursor: default;
-          svg {
-            #left-bg,
-            #right-bg {
-              fill: #9a9a9a;
-            }
-
-            path {
-              fill: #8e8e8e;
-            }
+        svg {
+          #left-bg,
+          #right-bg {
+            fill: #9a9a9a;
           }
-        
+
+          path {
+            fill: #8e8e8e;
+          }
+        }
       }
     }
 
