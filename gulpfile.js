@@ -322,6 +322,8 @@ gulp.task("mrarejs", async (done) => {
   ];
   const globals = theme.scripts.globals;
 
+  console.log(globals);
+
   const bundle = await rollup.rollup({
     input: paths.js.mrare.index,
     external,

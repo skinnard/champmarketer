@@ -19,10 +19,12 @@ scripts:
         - '@tanem/svg-injector'
         - twitter-fetcher
         - typed.js
+        - tiny-slider
     globals:
         aos: AOS
         countup.js: CountUp
         flickity: Flickity
+        tiny-slider: tns
         jarallax: jarallax
         jquery: jQuery
         isotope-layout: Isotope

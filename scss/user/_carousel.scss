@@ -1,11 +1,72 @@
-.carousel-wrapper {
+#carousel-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
 
-  #ig-likes-carousel {
-    margin: 0;
-    height: 480px;
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+    cursor: grab;
+  }
 
+  .slick-slide {
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 300px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (max-width: 540px) {
+      max-width: 250px;
+    }
+  }
+
+  .arrows {
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      z-index: 999;
+      cursor: pointer;
+
+      &.slick-disabled {
+        cursor: default;
+          svg {
+            #left-bg,
+            #right-bg {
+              fill: #9a9a9a;
+            }
+
+            path {
+              fill: #8e8e8e;
+            }
+          }
+        
+      }
+    }
+
+    .prev-arrow {
+      left: 30px;
+      top: calc(50% - 20px);
+    }
+
+    .next-arrow {
+      right: 30px;
+      top: calc(50% - 20px);
+    }
+  }
+
+  .cm-carousel {
     &::before,
     &::after {
       content: " ";
@@ -29,53 +90,6 @@
     &::after {
       left: 0px;
       background: linear-gradient(90deg, #fff 0, hsla(0, 0%, 100%, 0));
-    }
-
-    .flickity-button {
-      z-index: 999;
-
-      &.flickity-prev-next-button.next {
-        right: -30px;
-        
-        @media screen and(max-width: 1300px) {
-            right: 30px;
-        }
-
-      }
-
-      &.flickity-prev-next-button.previous {
-        left: -30px;
-
-        @media screen and(max-width: 1300px) {
-            left: 30px;
-        }
-      }
-    }
-
-    .col {
-      height: auto;
-      width: 100%;
-      max-width: 300px;
-
-      .features {
-        ul {
-          list-style: none;
-
-          li {
-            display: flex;
-            align-items: center;
-
-            .rounded-circle {
-              margin-right: 10px;
-              background: none;
-
-              svg {
-                margin: 3px !important;
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
