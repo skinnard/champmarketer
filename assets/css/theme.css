@@ -13542,8 +13542,7 @@ pre[class*="language-"] {
   #carousel-wrapper .slick-slide {
     margin-right: 10px;
     margin-left: 10px;
-    max-width: 300px;
-    width: 300px; }
+    max-width: 300px; }
     #carousel-wrapper .slick-slide:focus {
       outline: none; }
     @media (max-width: 767px) {
