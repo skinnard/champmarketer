@@ -1,19 +1,22 @@
-<div class="alert alert-dismissible d-md-block bg-primary-3 text-white py-4 py-md-3 px-0 mb-0 rounded-0 border-0">
+<div id="announcement-bar" class="alert alert-dismissible d-md-block bg-primary-3 text-white py-2 px-0 mb-0 rounded-0 border-0">
     <div class="container">
         <div class="row no-gutters align-items-md-center justify-content-center">
-            <div class="col-lg-11 col-md d-flex flex-column flex-md-row align-items-md-center justify-content-lg-center">
-                <div class="mb-3 mb-md-0">
-                    <strong>Intro Sale</strong>
-                    Get 10% off your first order. Act fast, ends soon.</div>
-                <a class="btn btn-sm btn-warning ml-md-3" target="_blank" href="#">Redeem Offer</a>
+            <div class="d-flex align-items-center">
+                <div class="text pr-3" style="font-size: 14px;">
+                    <strong>Intro Sale</strong> Get 10% off your first order. Act fast, ends soon.
+                </div>
+                <div class="btn-wrapper pr-3 pr-md-0 position-relative">
+                    <div id="close-btn" class="col-auto position-absolute right">
+                        <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                                <img src="assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg="data-inject-svg">
+                            </span>
+                        </button>
+                    </div>
+                    <a class="btn btn-sm btn-warning ml-md-3" target="_blank" href="#">Redeem&nbsp;Offer</a>
+                </div>
             </div>
-            <div class="col-auto position-absolute right">
-                <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">
-                        <img src="assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg="data-inject-svg">
-                    </span>
-                </button>
-            </div>
+
         </div>
     </div>
 </div>

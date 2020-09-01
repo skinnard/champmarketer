@@ -1,0 +1,17 @@
+#announcement-bar {
+
+    .text {
+        line-height: 1.2;
+    }
+
+    .btn-wrapper {
+        #close-btn {
+            right: -40px;
+            top: 4px;
+
+            @media (max-width: 600px) {
+              right: -20px;
+            }
+         }
+    }
+}
