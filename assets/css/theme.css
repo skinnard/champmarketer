@@ -14406,4 +14406,14 @@ nav > .pagination .page-item.active .page-link {
 .slick-arrow.slick-hidden {
   display: none; }
 
+#announcement-bar .text {
+  line-height: 1.2; }
+
+#announcement-bar .btn-wrapper #close-btn {
+  right: -40px;
+  top: 4px; }
+  @media (max-width: 600px) {
+    #announcement-bar .btn-wrapper #close-btn {
+      right: -20px; } }
+
 /*# sourceMappingURL=theme.css.map */
