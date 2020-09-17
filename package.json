@@ -41,7 +41,6 @@
     "prismjs": "~1.17.1",
     "scrollmonitor": "~1.2.4",
     "smooth-scroll": "~16.1.0",
-    "tiny-slider": "^2.9.3",
     "twitter-fetcher": "~18.0.2",
     "typed.js": "~2.0.11"
   },

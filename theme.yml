@@ -6,32 +6,17 @@ domain: jumpstart
 scripts:
     external:
         - aos
-        - flickity
         - jquery
         - jquery-countdown
-        - ion-rangeslider
-        - isotope-layout
         - jarallax
-        - plyr
-        - prismjs
         - scrollmonitor
         - smooth-scroll
         - '@tanem/svg-injector'
-        - twitter-fetcher
-        - typed.js
-        - tiny-slider
     globals:
         aos: AOS
         countup.js: CountUp
-        flickity: Flickity
-        tiny-slider: tns
         jarallax: jarallax
         jquery: jQuery
-        isotope-layout: Isotope
-        plyr: Plyr
-        prismjs: Prism
         scrollmonitor: scrollMonitor
         smooth-scroll: SmoothScroll
         '@tanem/svg-injector': SVGInjector
-        twitter-fetcher: twitterFetcher
-        typed.js: Typed
